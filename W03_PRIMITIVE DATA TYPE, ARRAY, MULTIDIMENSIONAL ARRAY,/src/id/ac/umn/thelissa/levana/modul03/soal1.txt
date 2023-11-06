@@ -1,0 +1,38 @@
+1. Multidimensional Arrays dalam Java:
+Multidimensional arrays adalah struktur data yang memungkinkan Anda untuk menyimpan elemen-elemen dalam bentuk matriks atau tabel 
+yang memiliki lebih dari satu dimensi. Di Java, Anda dapat membuat array multidimensional dengan menggunakan tanda kurung siku ganda ([][]) 
+untuk menunjukkan lebih dari satu dimensi. Contoh array dua dimensi adalah array yang memiliki baris dan kolom, mirip dengan tabel.
+Contoh:
+int[][] matrix = new int[3][4];
+matrix[0][0] = 1;  matrix[0][0] = 1; 
+matrix[0][1] = 2;  matrix[0][0] = 1;
+matrix[0][2] = 3;
+matrix[0][3] = 4;
+
+Di atas, matrix adalah array dua dimensi dengan 3 baris dan 4 kolom.
+
+2.Method-method String dalam Java:
+- Java menyediakan banyak method untuk mengelola objek String. Berikut adalah 13 method yang umum digunakan:
+- length(): Mengembalikan panjang (jumlah karakter) dari string.
+- charAt(int index): Mengembalikan karakter di posisi indeks yang diberikan.
+- substring(int beginIndex): Mengembalikan sub-string mulai dari indeks tertentu hingga akhir string.
+- substring(int beginIndex, int endIndex): Mengembalikan sub-string mulai dari indeks awal hingga indeks akhir yang diberikan.
+- concat(String str): Menggabungkan string saat ini dengan string lain.
+- toLowerCase(): Mengubah semua karakter dalam string menjadi huruf kecil.
+- toUpperCase(): Mengubah semua karakter dalam string menjadi huruf besar.
+- trim(): Menghapus spasi di awal dan akhir string.
+- equals(Object obj): Membandingkan string dengan objek lain untuk kesamaan.
+- equalsIgnoreCase(String anotherString): Membandingkan string tanpa memperhatikan perbedaan huruf besar-kecil.
+- startsWith(String prefix): Memeriksa apakah string dimulai dengan prefix tertentu.
+- endsWith(String suffix): Memeriksa apakah string diakhiri dengan sufix tertentu.
+- indexOf(String str): Mengembalikan indeks pertama dari substring yang cocok dalam string.
+
+3. Keuntungan Immutability dalam Java:
+Immutability adalah karakteristik objek String di Java yang menyiratkan bahwa setelah objek String dibuat, nilainya tidak dapat diubah. 
+Beberapa keuntungan dari immutability dalam Java adalah:
+
+Optimisasi: String yang tidak berubah dapat disimpan dalam cache untuk meningkatkan efisiensi penggunaan memori. Ini berarti jika Anda memiliki 
+            banyak string dengan nilai yang sama, JVM dapat menggunakan string yang sama dari cache, menghemat memori.
+
+Thread Safety: Karena string tidak dapat diubah, mereka aman digunakan dalam lingkungan multithreading tanpa 
+               memerlukan penguncian atau sinkronisasi tambahan. Ini dapat mengurangi kompleksitas kode.
